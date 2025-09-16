@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ProperTea.Domain.Shared.Exceptions;
+using ProperTea.Shared.Domain.Exceptions;
 
-namespace ProperTea.Infrastructure.Shared.ErrorHandling;
+namespace ProperTea.Shared.Infrastructure.ErrorHandling;
 
 public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IExceptionHandler
 {

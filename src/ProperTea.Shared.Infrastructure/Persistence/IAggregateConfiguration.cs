@@ -1,6 +1,6 @@
-using ProperTea.Domain.Shared;
+using ProperTea.Shared.Domain;
 
-namespace ProperTea.Infrastructure.Shared.Persistence;
+namespace ProperTea.Shared.Infrastructure.Persistence;
 
 public interface IAggregateConfiguration<in T> where T : AggregateRoot
 {

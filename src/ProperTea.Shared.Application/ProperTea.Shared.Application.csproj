@@ -6,13 +6,14 @@
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>ProperTea</Authors>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="ProperTea.Shared.Domain" Version="1.0.0" />
+      <PackageReference Include="ProperTea.Shared.Domain" Version="1.0.1" />
     </ItemGroup>
-    
+
     <Target Name="PushNuGetPackage" AfterTargets="GenerateNuspec">
-        <Exec Command="dotnet nuget push $(ProjectDir)bin\Debug\ProperTea.Shared.Application.1.0.0.nupkg -s localfeed"></Exec>
+        <Exec Command="dotnet nuget push $(ProjectDir)bin\Debug\ProperTea.Shared.Application.1.0.1.nupkg -s localfeed"></Exec>
     </Target>
 </Project>

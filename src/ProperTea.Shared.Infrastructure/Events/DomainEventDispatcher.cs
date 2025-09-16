@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using ProperTea.Domain.Shared.Events;
+using ProperTea.Shared.Domain.Events;
 
-namespace ProperTea.Infrastructure.Shared.Events;
+namespace ProperTea.Shared.Infrastructure.Events;
 
 public class DomainEventDispatcher(IServiceProvider serviceProvider) : IDomainEventDispatcher
 {

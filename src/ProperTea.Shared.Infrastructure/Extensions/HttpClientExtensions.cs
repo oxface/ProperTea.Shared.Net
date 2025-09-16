@@ -1,7 +1,7 @@
 using System.Net.Http.Json;
 using Microsoft.Extensions.Logging;
 
-namespace ProperTea.Infrastructure.Shared.Extensions;
+namespace ProperTea.Shared.Infrastructure.Extensions;
 
 public static class HttpClientExtensions
 {

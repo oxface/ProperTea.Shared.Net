@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using ProperTea.Domain.Shared;
-using ProperTea.Domain.Shared.Pagination;
+using ProperTea.Shared.Domain;
+using ProperTea.Shared.Domain.Pagination;
 
-namespace ProperTea.Infrastructure.Shared.Persistence;
+namespace ProperTea.Shared.Infrastructure.Persistence;
 
 public abstract class RepositoryBase<T, TFilter>(DbContext context)
     : IRepository<T, TFilter>

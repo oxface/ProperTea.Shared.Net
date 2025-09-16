@@ -1,9 +1,9 @@
 using System.Text.Json;
 using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Logging;
-using ProperTea.Domain.Shared.Events;
+using ProperTea.Shared.Domain.Events;
 
-namespace ProperTea.Infrastructure.Shared.Events;
+namespace ProperTea.Shared.Infrastructure.Events;
 
 public interface IIntegrationEventPublisher
 {

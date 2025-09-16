@@ -31,9 +31,7 @@ public static class Extensions
         {
             // Turn on resilience by default
             if (defaultResilience)
-            {
                 http.AddStandardResilienceHandler();
-            }
 
             // Turn on service discovery by default
             http.AddServiceDiscovery();

@@ -13,11 +13,11 @@ public abstract class AggregateRoot(Guid id) : Entity(id)
 {
     private readonly List<IDomainEvent> domainEvents = [];
 
-    public IReadOnlyCollection<IDomainEvent> DomainEvents => domainEvents.AsReadOnly();
-
     private AggregateRoot() : this(Guid.Empty)
     {
     }
+
+    public IReadOnlyCollection<IDomainEvent> DomainEvents => domainEvents.AsReadOnly();
 
     protected void RaiseDomainEvent(DomainEvent domainEvent)
     {

@@ -1,8 +1,8 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using ProperTea.Domain.Shared.Pagination;
+using ProperTea.Shared.Domain.Pagination;
 
-namespace ProperTea.Infrastructure.Shared.Persistence;
+namespace ProperTea.Shared.Infrastructure.Persistence;
 
 public static class QueryableExtensions
 {

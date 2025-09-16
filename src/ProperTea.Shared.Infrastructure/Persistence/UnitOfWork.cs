@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using ProperTea.Domain.Shared;
-using ProperTea.Domain.Shared.Events;
 using ProperTea.Shared.Application;
+using ProperTea.Shared.Domain;
+using ProperTea.Shared.Domain.Events;
 
-namespace ProperTea.Infrastructure.Shared.Persistence;
+namespace ProperTea.Shared.Infrastructure.Persistence;
 
 public class UnitOfWork(DbContext dbContext, IDomainEventDispatcher dispatcher)
     : IUnitOfWork
