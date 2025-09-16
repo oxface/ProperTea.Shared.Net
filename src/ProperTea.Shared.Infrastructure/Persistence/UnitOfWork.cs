@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ProperTea.Application.Shared;
 using ProperTea.Domain.Shared;
 using ProperTea.Domain.Shared.Events;
+using ProperTea.Shared.Application;
 
 namespace ProperTea.Infrastructure.Shared.Persistence;
 

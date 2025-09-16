@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="ProperTea.Domain.Shared" Version="1.0.0" />
+        <PackageReference Include="ProperTea.Shared.Domain" Version="1.0.0" />
     </ItemGroup>
     
     <Target Name="PushNuGetPackage" AfterTargets="GenerateNuspec">
