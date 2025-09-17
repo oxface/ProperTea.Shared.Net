@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProperTea.Shared.Domain.Exceptions;
 
-namespace ProperTea.Shared.Infrastructure.ErrorHandling;
+namespace ProperTea.Shared.Api.ErrorHandling;
 
 public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IExceptionHandler
 {

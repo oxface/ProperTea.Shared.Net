@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProperTea.Shared.Infrastructure.ErrorHandling;
+namespace ProperTea.Shared.Api.ErrorHandling;
 
 public static class StatusCodeHelpers
 {

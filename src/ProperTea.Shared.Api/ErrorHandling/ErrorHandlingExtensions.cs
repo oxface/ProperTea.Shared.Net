@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using ProperTea.Shared.Infrastructure.ErrorHandling;
 
-namespace ProperTea.Shared.Infrastructure.Extensions;
+namespace ProperTea.Shared.Api.ErrorHandling;
 
 public static class ErrorHandlingExtensions
 {

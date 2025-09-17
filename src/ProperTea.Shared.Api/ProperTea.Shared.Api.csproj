@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>ProperTea</Authors>
+        <Version>1.0.1</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ProperTea.Shared.Infrastructure" Version="1.0.1"/>
+    </ItemGroup>
+
+    <Target Name="PushNuGetPackage" AfterTargets="GenerateNuspec">
+        <Exec Command="dotnet nuget push $(ProjectDir)bin\Debug\ProperTea.Shared.Api.1.0.1.nupkg -s localfeed"></Exec>
+    </Target>
+
+</Project>
